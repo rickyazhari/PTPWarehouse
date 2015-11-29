@@ -1,0 +1,180 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="28b9e351-e88a-4a4d-b826-b60dba776aac" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Ptp Warehouse 1</ID>
+  <Name>Ptp Warehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a2a80b28-ae69-4805-adf7-692e006abc0b">
+      <ID>Dim Area</ID>
+      <Name>Dim Area</Name>
+      <DimensionID>Dim Area</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a1c7a762-bc61-471f-a204-a67f1c2ac463">
+          <AttributeID>Id Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="deae10aa-59c6-4385-a88e-aba964b682cf">
+          <AttributeID>Nama Afdelling</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14cc1487-5219-4c8d-9eac-6e850f0b4720">
+          <AttributeID>Nama Blok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7212e571-ed79-46b7-b671-b81e242fb8b2">
+          <AttributeID>Key Area</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="eed6e464-f4ac-4548-a6bd-32ae94561aee">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="809e819a-987c-4d3e-8040-52c7c6fe1a88">
+      <ID>Dim Waktu</ID>
+      <Name>Dim Waktu</Name>
+      <DimensionID>Dim Waktu</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f0fb45f2-7272-471a-a02c-3507a923dc0d">
+          <AttributeID>Id Waktu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4062ea57-554d-4699-b249-de064f4516c8">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cab24c3-7870-492a-b602-26334affa77f">
+          <AttributeID>Tanggal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5a038b8-04fe-4cbb-bfb5-dcc9b8a0abb1">
+          <AttributeID>Nama Bulan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="277da5cf-8b70-4ead-baba-f15314e2d873">
+          <AttributeID>Bulan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41bae227-187e-4cd5-9345-4bafd9339bf5">
+          <AttributeID>Tahun</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5ebf7309-a648-42ee-bc98-14088237f47a">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="0cacf089-a778-4602-afe3-b684f099408b">
+      <ID>Fact Dawungan</ID>
+      <Name>Fact Dawungan</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1f0e7ae7-5389-4102-aea2-21f12eaf2169">
+          <ID>Areal Dawaungan</ID>
+          <Name>Areal Dawaungan</Name>
+          <Source dwd:design-time-name="f94f1d1f-29f2-431b-9517-5b23b40911ad">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f61fe42d-d71c-4512-9104-ddad954e96fa">
+              <TableID>dbo_FactDawungan</TableID>
+              <ColumnID>areal_dawaungan</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="21b97b75-81a1-4582-b6e5-ffd20eb7854b">
+          <ID>Fact Dawungan Count</ID>
+          <Name>Fact Dawungan Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e46758b7-088a-4118-b0e0-5d9ef8b329b8">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ea429233-bafa-4dc9-ab0e-c0d4dde42bb7">
+              <TableID>dbo_FactDawungan</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="365f5ab7-bcfd-4af1-a213-e8641007234c">
+          <CubeDimensionID>Dim Area</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="912422b9-7c4c-4943-abe8-5cbd7f0e36e3">
+              <AttributeID>Id Area</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="17122bff-a0c9-413f-9630-3bbcf928832f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="89ba77c9-c8d8-42fd-8667-db4dc66a1a32">
+                    <TableID>dbo_FactDawungan</TableID>
+                    <ColumnID>area</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e9aaf43a-253b-412d-afd6-13b355d5cc0e">
+          <CubeDimensionID>Dim Waktu</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="702c1d29-86bf-492f-910a-94cb09f4e2e0">
+              <AttributeID>Id Waktu</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="11c92c09-8765-4ada-bb8d-3a6d2e7f44bb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="03589219-7abd-47b2-bc1b-8936830324b6">
+                    <TableID>dbo_FactDawungan</TableID>
+                    <ColumnID>waktu</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="d7fe4aed-5b29-47b8-aa04-51477d83f24a">
+    <DataSourceViewID>Ptp Warehouse</DataSourceViewID>
+  </Source>
+</Cube>

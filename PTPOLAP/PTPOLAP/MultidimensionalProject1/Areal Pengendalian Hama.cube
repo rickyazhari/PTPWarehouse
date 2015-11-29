@@ -1,0 +1,261 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="49d8b4eb-3558-4f1f-b6b5-09a82bf7830b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Areal Pengendalian Hama</ID>
+  <Name>Areal Pengendalian Hama</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="ba47ee53-98fb-4bc0-9106-dccb417c5255">
+      <ID>Dim Lahan</ID>
+      <Name>Dim Lahan</Name>
+      <DimensionID>Dim Lahan</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8492e9d9-259b-4d4c-b412-0589aba6d2af">
+          <AttributeID>Id Lahan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ef32003d-0c8c-400a-bbde-ccc30e84dee6">
+          <AttributeID>Jenis Lahan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17b1a74e-ce7e-48c7-8271-725ff63e8f2b">
+          <AttributeID>Uraian Lahan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1d86777b-da1a-483c-ba51-387b94b9e25a">
+          <AttributeID>Key Lahan</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="29b3179b-e499-4d3a-a8ad-4ea2c6c0ab90">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="850b6526-e1cd-4a8d-979f-b0a9d4d9ccaf">
+      <ID>Dim Hama</ID>
+      <Name>Dim Hama</Name>
+      <DimensionID>Dim Hama</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3bf26f97-b75a-447c-b8cd-c4ec580d3898">
+          <AttributeID>Id Hama</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a9c37334-724e-4c39-b55d-a80464f89f34">
+          <AttributeID>Jenis Hama</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e936fbe0-b3af-48bb-8f4b-8ab08493e2e5">
+          <AttributeID>Key Hama</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2311707d-f77c-418f-87bc-c7df208970e2">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4ee036d9-b12c-4ba5-9232-83db7a1a0e27">
+      <ID>Dim Area</ID>
+      <Name>Dim Area</Name>
+      <DimensionID>Dim Area</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="109d2986-beb8-4b41-b17d-a87068ec6ad5">
+          <AttributeID>Id Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed18cf5d-24c1-411d-b989-0119a7e880c8">
+          <AttributeID>Nama Afdelling</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="702ce4a5-7ebb-4704-9935-b8bd90dd98be">
+          <AttributeID>Nama Blok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ba8e81fc-6863-4dde-89dd-bacf795b1cdc">
+          <AttributeID>Key Area</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6bc2402f-dec2-4546-9b01-d78518505c35">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="e387e9eb-1053-4cac-8a1d-1125c91f9421">
+      <ID>Dim Waktu</ID>
+      <Name>Dim Waktu</Name>
+      <DimensionID>Dim Waktu</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5182c344-3449-4076-9329-0a26a3e75274">
+          <AttributeID>Id Waktu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="04a14e7a-610a-462e-bd75-7a2892eedba3">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0aaf4658-191f-4f0b-81fb-66bb5eeb84f3">
+          <AttributeID>Tanggal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="afee09fa-15d8-45f5-9479-8065192ef25f">
+          <AttributeID>Nama Bulan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="240e0b09-f8bb-4db0-959d-6c59a950d84a">
+          <AttributeID>Bulan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd4cc7e2-7cf1-453f-bfc7-89dc70ff8732">
+          <AttributeID>Tahun</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="b75ad97a-bb75-4e4d-a3a0-71742ffc57f4">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="18c5086d-555f-49ab-9e1c-2827d1da3a93">
+      <ID>Fact Pengendalian Hama</ID>
+      <Name>Fact Pengendalian Hama</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0bf13003-bc6f-48d8-8b91-5a24bcbfefd9">
+          <ID>Pengendalian Hama</ID>
+          <Name>Pengendalian Hama</Name>
+          <Source dwd:design-time-name="f77ab130-e124-4f55-944e-d2ffd7e74dff">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e9c830e9-103f-401a-b4d9-e1c24bd7021a">
+              <TableID>dbo_FactPengendalianHama</TableID>
+              <ColumnID>pengendalian_hama</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b58857a1-bd0e-4e3b-a12b-3823f57f4ea4">
+          <ID>Fact Pengendalian Hama Count</ID>
+          <Name>Fact Pengendalian Hama Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="fe1abe4f-5cd9-4868-b1a6-34277be6a200">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9f1298fe-6d72-440a-915d-c283581ceac7">
+              <TableID>dbo_FactPengendalianHama</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2474a41a-027b-43ba-ac36-4c10816ff52b">
+          <CubeDimensionID>Dim Lahan</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b6a0fe1b-1e63-44d1-aaed-74b7017c1a67">
+              <AttributeID>Id Lahan</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d9b3cfb7-b08c-495f-9bc3-51ab07b44c9f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8ccd7282-1060-4761-b316-0439caa09b47">
+                    <TableID>dbo_FactPengendalianHama</TableID>
+                    <ColumnID>lahan</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c4cf989e-31b3-4522-9a29-6c26f66c3ae0">
+          <CubeDimensionID>Dim Hama</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="90d986ec-fb94-4fdb-8e69-1f5ce3361870">
+              <AttributeID>Id Hama</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f1a141dd-5b25-4d9e-a226-7b46ec40daad">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04533447-3932-46b3-b018-90960e040270">
+                    <TableID>dbo_FactPengendalianHama</TableID>
+                    <ColumnID>hama</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="205abff6-2f95-498c-87f5-d4e5b6fab33a">
+          <CubeDimensionID>Dim Area</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="795537ae-fa43-4a7d-b3d7-b718ae67e864">
+              <AttributeID>Id Area</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="efaa272c-5d2b-4f2f-a5a6-3676baa9f283">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="11cf8d58-db5a-41ce-bffb-419bd990ef1a">
+                    <TableID>dbo_FactPengendalianHama</TableID>
+                    <ColumnID>area</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="442465d8-8394-4408-931b-c3463dad3498">
+          <CubeDimensionID>Dim Waktu</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e512396-0bd3-4af7-83a2-b383419759a7">
+              <AttributeID>Id Waktu</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c72aab90-59bb-4e88-a65f-09446216e854">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="35d0965c-e52c-49d6-829f-567b02faae14">
+                    <TableID>dbo_FactPengendalianHama</TableID>
+                    <ColumnID>waktu</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="82164494-7bd9-46d0-9771-f1ddbfb99a70">
+    <DataSourceViewID>Ptp Warehouse</DataSourceViewID>
+  </Source>
+</Cube>

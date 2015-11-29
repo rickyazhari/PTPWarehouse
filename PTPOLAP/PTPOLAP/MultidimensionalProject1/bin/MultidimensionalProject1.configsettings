@@ -1,0 +1,286 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>Ptp Warehouse</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=LENOVO-PC;Integrated Security=SSPI;Initial Catalog=ptpWarehouse</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Area</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Barang Bahan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Hama</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Lahan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Nyiang</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Pangkas</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Pemetikan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Pupuk</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Tanah</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Waktu</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Curah Hujan cube</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Curah Hujan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Curah Hujan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Ptp Warehouse</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Target Produksi</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Target Produksi</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Luas Areal Produksi</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Area Produksi</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Area Produksi</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Realisasi Produksi</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Produksi</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Produksi</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Pemangkasan</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Pemangkasan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Pemangkasan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Pemupukan</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Pemupukan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Pemupukan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Barang Bahan</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Barang Bahan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Barang Bahan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Ptp Warehouse 1</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Dawungan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Dawungan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Konsensi</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Konsensi</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Konsensi</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Penyiangan</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Penyiangan</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Penyiangan</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Areal Pengendalian Penyakit</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Pengendalian Penyakit</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Pengendalian Penyakit</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Serangan Penyakit</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Serangan Penyakit</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Serangan Penyakit</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Semprot Penyakit</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Semprot Penyakit</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Semprot Penyakit</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Fungisida Penyakit</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Fungisida Penyakit</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Fungisida Penyakit</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Areal Pengendalian Hama</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Pengendalian Hama</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Pengendalian Hama</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Serangan Hama</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Serangan Hama</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Serangan Hama</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Semprot Hama</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Semprot Hama</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Semprot Hama</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Inteksida Hama</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Inteksida Hama</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Inteksida Hama</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

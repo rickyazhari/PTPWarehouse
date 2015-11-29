@@ -1,0 +1,266 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>12.0.2430.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>MultidimensionalProject1.database</Name>
+    <FullPath>MultidimensionalProject1.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Curah Hujan cube.cube</Name>
+      <FullPath>Curah Hujan cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Curah Hujan cube.partitions</Name>
+          <FullPath>Curah Hujan cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Target Produksi.cube</Name>
+      <FullPath>Target Produksi.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Target Produksi.partitions</Name>
+          <FullPath>Target Produksi.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Luas Areal Produksi.cube</Name>
+      <FullPath>Luas Areal Produksi.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Luas Areal Produksi.partitions</Name>
+          <FullPath>Luas Areal Produksi.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Realisasi Produksi.cube</Name>
+      <FullPath>Realisasi Produksi.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Realisasi Produksi.partitions</Name>
+          <FullPath>Realisasi Produksi.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pemangkasan.cube</Name>
+      <FullPath>Pemangkasan.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Pemangkasan.partitions</Name>
+          <FullPath>Pemangkasan.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pemupukan.cube</Name>
+      <FullPath>Pemupukan.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Pemupukan.partitions</Name>
+          <FullPath>Pemupukan.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Barang Bahan.cube</Name>
+      <FullPath>Barang Bahan.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Barang Bahan.partitions</Name>
+          <FullPath>Barang Bahan.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ptp Warehouse.cube</Name>
+      <FullPath>Ptp Warehouse.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Ptp Warehouse.partitions</Name>
+          <FullPath>Ptp Warehouse.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Konsensi.cube</Name>
+      <FullPath>Konsensi.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Konsensi.partitions</Name>
+          <FullPath>Konsensi.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Penyiangan.cube</Name>
+      <FullPath>Penyiangan.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Penyiangan.partitions</Name>
+          <FullPath>Penyiangan.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Areal Pengendalian Penyakit.cube</Name>
+      <FullPath>Areal Pengendalian Penyakit.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Areal Pengendalian Penyakit.partitions</Name>
+          <FullPath>Areal Pengendalian Penyakit.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Serangan Penyakit.cube</Name>
+      <FullPath>Serangan Penyakit.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Serangan Penyakit.partitions</Name>
+          <FullPath>Serangan Penyakit.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Semprot Penyakit.cube</Name>
+      <FullPath>Semprot Penyakit.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Semprot Penyakit.partitions</Name>
+          <FullPath>Semprot Penyakit.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fungisida Penyakit.cube</Name>
+      <FullPath>Fungisida Penyakit.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Fungisida Penyakit.partitions</Name>
+          <FullPath>Fungisida Penyakit.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Areal Pengendalian Hama.cube</Name>
+      <FullPath>Areal Pengendalian Hama.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Areal Pengendalian Hama.partitions</Name>
+          <FullPath>Areal Pengendalian Hama.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Serangan Hama.cube</Name>
+      <FullPath>Serangan Hama.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Serangan Hama.partitions</Name>
+          <FullPath>Serangan Hama.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Semprot Hama.cube</Name>
+      <FullPath>Semprot Hama.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Semprot Hama.partitions</Name>
+          <FullPath>Semprot Hama.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Inteksida Hama.cube</Name>
+      <FullPath>Inteksida Hama.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Inteksida Hama.partitions</Name>
+          <FullPath>Inteksida Hama.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Area.dim</Name>
+      <FullPath>Dim Area.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Barang Bahan.dim</Name>
+      <FullPath>Dim Barang Bahan.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Hama.dim</Name>
+      <FullPath>Dim Hama.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Lahan.dim</Name>
+      <FullPath>Dim Lahan.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Nyiang.dim</Name>
+      <FullPath>Dim Nyiang.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Pangkas.dim</Name>
+      <FullPath>Dim Pangkas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Pemetikan.dim</Name>
+      <FullPath>Dim Pemetikan.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Pupuk.dim</Name>
+      <FullPath>Dim Pupuk.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tanah.dim</Name>
+      <FullPath>Dim Tanah.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Waktu.dim</Name>
+      <FullPath>Dim Waktu.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Ptp Warehouse.ds</Name>
+      <FullPath>Ptp Warehouse.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Ptp Warehouse.dsv</Name>
+      <FullPath>Ptp Warehouse.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Ptp Warehouse</Id>
+            <Name>Ptp Warehouse</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=LENOVO-PC;Integrated Security=SSPI;Initial Catalog=ptpWarehouse</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Ptp Warehouse</Id>
+            <Name>Ptp Warehouse</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

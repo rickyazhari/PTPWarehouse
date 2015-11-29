@@ -1,0 +1,219 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2d5464d7-956b-4bcc-b870-61e85f96062f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Pemupukan</ID>
+  <Name>Pemupukan</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="7f435a95-2a18-4e57-a5a6-faffdd6934f2">
+      <ID>Dim Waktu</ID>
+      <Name>Dim Waktu</Name>
+      <DimensionID>Dim Waktu</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1f23f0a3-d7bc-4925-b559-2c9a27ae2e13">
+          <AttributeID>Id Waktu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83fc63e8-37a0-48cc-a2fc-7143394d1677">
+          <AttributeID>Full Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b139b16-b85f-4385-b493-32e17a0a7237">
+          <AttributeID>Tanggal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="03e2af8d-412c-4dec-b02a-ba1fa3bd4829">
+          <AttributeID>Nama Bulan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9dc48af5-9855-4066-a931-dd90740a1091">
+          <AttributeID>Bulan</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="67e1bbb5-c446-4f2a-84cb-46d55e2b4b78">
+          <AttributeID>Tahun</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="18b86ec4-1b72-487c-bf63-f7fc379b42f4">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="0eff32a0-a9d3-4b85-971a-b2126b07f350">
+      <ID>Dim Area</ID>
+      <Name>Dim Area</Name>
+      <DimensionID>Dim Area</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7180a674-6700-4085-8b44-f00d9a5095f7">
+          <AttributeID>Id Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a72eedc-5e4d-423f-bdb5-1aa727c62913">
+          <AttributeID>Nama Afdelling</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e1674f94-6069-4292-bb4a-866adf1301b0">
+          <AttributeID>Nama Blok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b186155f-9ab9-4f3d-847d-393c519e5063">
+          <AttributeID>Key Area</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="4f8b2459-0a08-4375-bd57-b777a703bc99">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="71938daf-e3c9-4349-8514-968e60745a18">
+      <ID>Dim Pupuk</ID>
+      <Name>Dim Pupuk</Name>
+      <DimensionID>Dim Pupuk</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e8db9c58-43bc-4c38-a3f6-77f32ba20755">
+          <AttributeID>Id Pupuk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4c8ccc74-08e4-490e-8157-fa3360032ea1">
+          <AttributeID>Jenis Pupuk</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a126de56-5f03-47f4-9809-64a2afc88f39">
+          <AttributeID>Key Pupuk</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5ffb9a3b-2264-47b6-9bd2-e736657a9ea4">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="ff0e4c9d-e528-4978-9f67-b9e0621cc827">
+      <ID>Fact Pemupukan</ID>
+      <Name>Fact Pemupukan</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0f7d1ed1-af29-427e-9e4d-aae7f9b8da19">
+          <ID>Pemupukan</ID>
+          <Name>Pemupukan</Name>
+          <Source dwd:design-time-name="89d9601c-b941-4f36-88ed-9e8200da2757">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="93fba58d-6815-4bab-9b15-8c5e52cb54f3">
+              <TableID>dbo_FactPemupukan</TableID>
+              <ColumnID>pemupukan</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="67c51fce-230d-4c55-92bc-8ddfaef70200">
+          <ID>Fact Pemupukan Count</ID>
+          <Name>Fact Pemupukan Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f9b3aff0-d7d7-47a8-822e-9cdca20ab921">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6236d603-26ea-44f1-be78-3351f970f063">
+              <TableID>dbo_FactPemupukan</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7e63231a-16e2-4ce5-9d92-88d6968afc9f">
+          <CubeDimensionID>Dim Waktu</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ed7fb974-72e0-4621-b63d-5536ad953430">
+              <AttributeID>Id Waktu</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1ec71e63-2ff7-4b09-9f69-98a786d4ca1a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="13ad2f91-ea37-476b-b2c8-fd51dd564488">
+                    <TableID>dbo_FactPemupukan</TableID>
+                    <ColumnID>waktu</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="215e29b8-68fa-4c1d-b03c-6f0925562e1a">
+          <CubeDimensionID>Dim Area</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3c7fee2b-9d81-45ec-91a3-008113c6cb24">
+              <AttributeID>Id Area</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9296a440-9e33-4905-828c-b3ba1c08756b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2ccd2db2-2864-4369-b337-70017fc4c4cd">
+                    <TableID>dbo_FactPemupukan</TableID>
+                    <ColumnID>area</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="69c19e99-e973-4883-bc63-bb146cae3b32">
+          <CubeDimensionID>Dim Pupuk</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1a9033b-915d-494a-9341-4d4926485e5e">
+              <AttributeID>Id Pupuk</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d62416a1-6c85-430c-b286-18ba0d2e31a1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3868698b-ed4d-4e0d-96cd-ca9815992319">
+                    <TableID>dbo_FactPemupukan</TableID>
+                    <ColumnID>pupuk</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="ce913223-2aba-459e-b358-dde2a8ddcd5b">
+    <DataSourceViewID>Ptp Warehouse</DataSourceViewID>
+  </Source>
+</Cube>

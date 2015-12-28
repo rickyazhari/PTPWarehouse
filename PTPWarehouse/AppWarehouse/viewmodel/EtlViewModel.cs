@@ -41,30 +41,21 @@ namespace AppWarehouse.viewmodel
             return x;
         }
 
-        public string load_etl()
+        public Microsoft.SqlServer.Dts.Runtime.DTSExecResult load_etl()
         {
-            bool x = false;
-            var bw =  new BackgroundWorker();
+            Microsoft.SqlServer.Dts.Runtime.DTSExecResult x = new DTSExecResult(); ;
             Etl.Lokasi = Environment.CurrentDirectory.ToString() + "\\Resources\\Package.dtsx";
-            bw.DoWork+=(sender,args)=>{
-                try
-                {
-                    Etl.Pack = run_etl(Etl.Pack, Etl.Lokasi, Etl.App);
-                    Etl.Pack.Execute();
-                    Loading = true;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Terjadi kesalahan pada sistem dalam membaca paket, eksekusi dibatalkan", "General Error", MessageBoxButton.OK);
-                }
-            };
-
-            bw.RunWorkerCompleted+=(sender,args)=>
+            try
             {
-                Loading = false;
-            };
-            bw.RunWorkerAsync();
-            return etl.Pack.ExecutionResult.ToString();
+                Etl.Pack = run_etl(Etl.Pack, Etl.Lokasi, Etl.App);
+                x = Etl.Pack.Execute();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi kesalahan pada sistem dalam membaca paket, eksekusi dibatalkan", "General Error", MessageBoxButton.OK);
+
+            }
+            return x;
         }
 
 

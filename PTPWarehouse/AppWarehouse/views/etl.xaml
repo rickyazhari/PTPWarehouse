@@ -20,7 +20,7 @@
             VerticalAlignment="Top"
             Margin="0,-3,0,0"/>
         <StackPanel Grid.Row="0"
-              Margin="10,5,5,10">
+              Margin="10,0,5,10">
             <TextBlock
                 x:Name="exitbtn"
                 HorizontalAlignment="Right"
@@ -33,11 +33,12 @@
                 FontStretch="ExtraExpanded"
                 FontSize="12" MouseUp="exitbtn_MouseUp"
                 Cursor="Hand" />
-            <TextBlock
-                Foreground="#ffffff"
-                Text="PTP WAREHOUSE"
-                FontSize="27"
-                FontWeight="Bold"/>
+            <Image
+                x:Name="LogoImg"
+                Source="/AppWarehouse;component/Resources/logo-perusahaan.png"
+                Width="250"
+                Height="50"
+                HorizontalAlignment="Left"/>
             <TextBlock
                 Margin="0,5,0,0"
                 Foreground="#ffffff"
@@ -73,7 +74,8 @@
                 <TextBlock
                     Visibility="Hidden"
                     Text="Proses ETL, Silahkan tunggu"
-                    x:Name="proseslbl"/>
+                    x:Name="proseslbl"
+                    Margin="0,0,10,0"/>
                 <ProgressBar 
             x:Name="pbLoading"
             IsIndeterminate="{Binding Loading}"

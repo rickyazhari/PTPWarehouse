@@ -25,30 +25,43 @@ namespace AppWarehouse.views
         {
             InitializeComponent();
             submenu.Children.Add(new menu());
-            Content.Children.Add(new areal_produksi());
+            Con.Children.Clear();
+            Con.Children.Add(new LuasArealProduksi());
         }
 
         private void exitbtn_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
 
         private void laporan_menu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
+            Con.Children.Clear();
             App.MenuViewModel.SetOlap();
-            App.MenuViewModel.SelectedItem = "olap";
+            App.MenuViewModel.SelectedItem = Constant.OLAP_SELECTED;
+            Con.Children.Add(new LuasArealProduksi());
         }
 
         private void fakta_menu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
+            Con.Children.Clear();
             App.MenuViewModel.SetFactMenu();
-            App.MenuViewModel.SelectedItem = "fakta";
+            App.MenuViewModel.SelectedItem = Constant.FAKTA_SELECTED;
+            Con.Children.Add(new DimFact());
         }
 
         private void dimensi_menu_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
+            Con.Children.Clear();
             App.MenuViewModel.SetDimensiMenu();
-            App.MenuViewModel.SelectedItem = "dimensi";
+            App.MenuViewModel.SelectedItem = Constant.DIMENSI_SELECTED;
+            Con.Children.Add(new DimFact());
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            
         }
 
 

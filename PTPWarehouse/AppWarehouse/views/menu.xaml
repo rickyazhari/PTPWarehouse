@@ -29,7 +29,7 @@
                 ItemTemplate="{StaticResource ItemMenu}"
                 Foreground="#ffffff"
                 FontSize="18"
-                BorderBrush="{x:Null}"
+                BorderBrush="{x:Null}" SelectionChanged="ListMenu_SelectionChanged"
                 />
     </Grid>
 </UserControl>

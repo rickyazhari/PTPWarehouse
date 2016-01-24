@@ -143,6 +143,57 @@
     <Compile Include="views\menu.xaml.cs">
       <DependentUpon>menu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="views\OLAP\BarangBahan.xaml.cs">
+      <DependentUpon>BarangBahan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\CurahHujan.xaml.cs">
+      <DependentUpon>CurahHujan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\Dawungan.xaml.cs">
+      <DependentUpon>Dawungan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\FungisidaPenyakit.xaml.cs">
+      <DependentUpon>FungisidaPenyakit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\TargetProduksi.xaml.cs">
+      <DependentUpon>TargetProduksi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\SeranganPenyakit.xaml.cs">
+      <DependentUpon>SeranganPenyakit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\SeranganHama.xaml.cs">
+      <DependentUpon>SeranganHama.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\SemprotPenyakit.xaml.cs">
+      <DependentUpon>SemprotPenyakit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\SemprotHama.xaml.cs">
+      <DependentUpon>SemprotHama.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\Produksi.xaml.cs">
+      <DependentUpon>Produksi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\Penyiangan.xaml.cs">
+      <DependentUpon>Penyiangan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\PengendalianPenyakit.xaml.cs">
+      <DependentUpon>PengendalianPenyakit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\PengendalianHama.xaml.cs">
+      <DependentUpon>PengendalianHama.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\Pemupukan.xaml.cs">
+      <DependentUpon>Pemupukan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\Pemangkasan.xaml.cs">
+      <DependentUpon>Pemangkasan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\Konsensi.xaml.cs">
+      <DependentUpon>Konsensi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\OLAP\InteksidaHama.xaml.cs">
+      <DependentUpon>InteksidaHama.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\OLAP\LuasArealProduksi.xaml.cs">
       <DependentUpon>LuasArealProduksi.xaml</DependentUpon>
     </Compile>
@@ -161,6 +212,74 @@
     <Page Include="views\menu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\OLAP\BarangBahan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\CurahHujan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\Dawungan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\FungisidaPenyakit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\TargetProduksi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\SeranganPenyakit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\SeranganHama.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\SemprotPenyakit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\SemprotHama.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\Produksi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\Penyiangan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\PengendalianPenyakit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\PengendalianHama.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\Pemupukan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\Pemangkasan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\Konsensi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\OLAP\InteksidaHama.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="views\OLAP\LuasArealProduksi.xaml">
       <SubType>Designer</SubType>

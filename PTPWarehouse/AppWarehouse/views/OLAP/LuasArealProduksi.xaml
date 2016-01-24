@@ -61,7 +61,7 @@
 			Grid.Row="1"
 			Height="400">
             <StackPanel>
-                <dxpg:PivotGridControl Visibility="Visible" x:Name="pivotGridControl" ChartSelectionOnly="False" Height="350" OlapDataProvider="OleDb" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}">
+                <dxpg:PivotGridControl Visibility="Visible" x:Name="pivotGridControl" ChartSelectionOnly="False" Height="350" OlapDataProvider="OleDb" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" ShowRowTotals="False" ShowColumnTotals="False" PrintDataHeaders="False" PrintFilterHeaders="False" PrintRowHeaders="False" PrintUnusedFilterFields="False" PrintColumnHeaders="False" ShowFilterHeaders="False">
                     <dxpg:PivotGridControl.Fields>
                         <dxpg:PivotGridField Area="RowArea" Caption="Nama Afdelling" FieldName="[Dim Area].[Hierarchy].[Nama Afdelling]" AreaIndex="1"/>
                         <dxpg:PivotGridField Area="RowArea" Caption="Nama Blok" FieldName="[Dim Area].[Hierarchy].[Nama Blok]" AreaIndex="0"/>
@@ -83,7 +83,7 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0"  Grid.Row="2">
             <Button x:Name="Print" Width="150" Height="50" Margin="5,0,5,0" Click="Print_Click">Pivot</Button>
             <Button x:Name="Chart" Width="150" Height="50" Margin="5,0,5,0" Click="Chart_Click">Chart</Button>
-            <Button x:Name="Pivot" Width="150" Height="50" Margin="5,0,5,0">Print</Button>
+            <Button x:Name="Pivot" Width="150" Height="50" Margin="5,0,5,0" Click="Pivot_Click">Print</Button>
         </StackPanel>
     </Grid>
 </UserControl>

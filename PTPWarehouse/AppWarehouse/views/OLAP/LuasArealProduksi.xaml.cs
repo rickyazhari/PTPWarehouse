@@ -59,5 +59,11 @@ namespace AppWarehouse.views.OLAP
             }
         }
 
+        private void Pivot_Click(object sender, RoutedEventArgs e)
+        {
+            var parent = Window.GetWindow(this);
+            pivotGridControl.ShowPrintPreviewDialog(parent, "Areal Produksi", "Areal Produksi");
+        }
+
     }
 }

@@ -119,7 +119,8 @@
             <StackPanel
                 Grid.Column="1"
                 Grid.Row="1"
-                x:Name="Con">
+                x:Name="Con"
+                x:FieldModifier="public">
                 
             </StackPanel>
         </Grid>

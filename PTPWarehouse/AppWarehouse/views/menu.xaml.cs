@@ -20,10 +20,12 @@ namespace AppWarehouse.views
     /// </summary>
     public partial class menu : UserControl
     {
-        public menu()
+        public main Parent;
+        public menu(main x)
         {
             InitializeComponent();
             DataContext = App.MenuViewModel;
+            Parent = x;
         }
 
         private void ListMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -176,6 +178,84 @@ namespace AppWarehouse.views
                     default:
                         App.DimfactViewModel.HeadTabel = "Fakta Area Produksi";
                         App.DimfactViewModel.GenerateTabel(Constant.TABEL_FACT_AREA_PRODUKSI);
+                        break;
+                }
+            }
+
+            if (App.MenuViewModel.SelectedItem == Constant.OLAP_SELECTED)
+            {
+                Parent.Con.Children.Clear();
+                switch (ListMenu.SelectedIndex)
+                {
+                    case 1 :
+                        Parent.Con.Children.Add(new OLAP.BarangBahan());
+                        break;
+
+                    case 2 :
+                        Parent.Con.Children.Add(new OLAP.CurahHujan());
+                            break;
+                    
+                    case 3 :
+                            Parent.Con.Children.Add(new OLAP.Dawungan());
+                            break;
+
+                    case 4 :
+                        Parent.Con.Children.Add(new OLAP.FungisidaPenyakit());
+                        break;
+
+                    case 5 :
+                        Parent.Con.Children.Add(new OLAP.InteksidaHama());
+                        break;
+
+                    case 6 :
+                        Parent.Con.Children.Add(new OLAP.Konsensi());
+                        break;
+
+                    case 7 :
+                        Parent.Con.Children.Add(new OLAP.Pemangkasan());
+                        break;
+                    
+                    case 8:
+                        Parent.Con.Children.Add(new OLAP.Pemupukan());
+                        break;
+
+                    case 9:
+                        Parent.Con.Children.Add(new OLAP.PengendalianHama());
+                        break;
+
+                    case 10:
+                        Parent.Con.Children.Add(new OLAP.PengendalianPenyakit());
+                        break;
+
+                    case 11:
+                        Parent.Con.Children.Add(new OLAP.Penyiangan());
+                        break;
+
+                    case 12:
+                        Parent.Con.Children.Add(new OLAP.Produksi());
+                        break;
+
+                    case 13:
+                        Parent.Con.Children.Add(new OLAP.SemprotHama());
+                        break;
+                    case 14:
+                        Parent.Con.Children.Add(new OLAP.SemprotPenyakit());
+                        break;
+
+                    case 15:
+                        Parent.Con.Children.Add(new OLAP.SeranganHama());
+                        break;
+
+                    case 16:
+                        Parent.Con.Children.Add(new OLAP.SeranganPenyakit());
+                        break;
+
+                    case 17:
+                        Parent.Con.Children.Add(new OLAP.TargetProduksi());
+                        break;
+
+                    default :
+                        Parent.Con.Children.Add(new OLAP.LuasArealProduksi());
                         break;
                 }
             }

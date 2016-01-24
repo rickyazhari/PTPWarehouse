@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="AppWarehouse.views.OLAP.SemprotHama"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"  xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="700">
+    <UserControl.Resources>
+
+        <dx:PivotOlapDataSource x:Key="PivotOlapDataSource" Cube="Semprot Hama" Catalog="PTPOLAP" ConnectionTimeout="60" LocaleIdentifier="33" Password="{x:Null}" Provider="MSOLAP.6" QueryTimeout="30" Server="LENOVO-PC" UserId="LENOVO-PC\Lenovo">
+            <dx:DesignDataManager.DesignData>
+                <dx:DesignDataSettings RowCount="5"/>
+            </dx:DesignDataManager.DesignData>
+        </dx:PivotOlapDataSource>
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel
+			Orientation="Vertical">
+            <TextBlock
+				Foreground="#FF254264"
+				Text="Semprot Hama"
+				FontSize="27"
+				FontWeight="Bold"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+                />
+        </StackPanel>
+        <ScrollViewer
+			Grid.Row="1"
+			Height="400">
+            <StackPanel>
+                <dxpg:PivotGridControl Visibility="Visible" x:Name="pivotGridControl" ChartSelectionOnly="False" Height="350" OlapDataProvider="OleDb" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" ShowRowTotals="False" ShowColumnTotals="False" PrintDataHeaders="False" PrintFilterHeaders="False" PrintRowHeaders="False" PrintUnusedFilterFields="False" PrintColumnHeaders="False" ShowFilterHeaders="False">
+                    <dxpg:PivotGridControl.Fields>
+                        <dxpg:PivotGridField Area="RowArea" Caption="Nama Afdelling" FieldName="[Dim Area].[Hierarchy].[Nama Afdelling]" AreaIndex="0"/>
+                        <dxpg:PivotGridField Area="RowArea" Caption="Nama Blok" FieldName="[Dim Area].[Hierarchy].[Nama Blok]" AreaIndex="1"/>
+                        <dxpg:PivotGridField Area="RowArea" Caption="Jenis Hama" FieldName="[Dim Hama].[Hierarchy].[Jenis Hama]" AreaIndex="4"/>
+                        <dxpg:PivotGridField Area="RowArea" Caption="Jenis Lahan" FieldName="[Dim Lahan].[Hierarchy].[Jenis Lahan]" AreaIndex="2"/>
+                        <dxpg:PivotGridField Area="RowArea" Caption="Uraian Lahan" FieldName="[Dim Lahan].[Hierarchy].[Uraian Lahan]" AreaIndex="3"/>
+                        <dxpg:PivotGridField Area="ColumnArea" Caption="Nama Bulan" FieldName="[Dim Waktu].[Hierarchy].[Nama Bulan]" AreaIndex="1"/>
+                        <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu].[Hierarchy].[Tahun]" AreaIndex="0"/>
+                        <dxpg:PivotGridField Area="DataArea" Caption="Peneyemprotan" FieldName="[Measures].[Peneyemprotan]" AreaIndex="0"/>
+                    </dxpg:PivotGridControl.Fields>
+                </dxpg:PivotGridControl>
+                <dxc:ChartControl x:Name="chartControl" Visibility="Collapsed" DataSource="{Binding ChartDataSource, ElementName=pivotGridControl}"  Height="350">
+                    <dxc:XYDiagram2D SeriesDataMember="Series">
+                        <dxc:XYDiagram2D.SeriesTemplate>
+                            <dxc:BarSideBySideSeries2D ArgumentDataMember="Arguments" ValueDataMember="Values"/>
+                        </dxc:XYDiagram2D.SeriesTemplate>
+                    </dxc:XYDiagram2D>
+                </dxc:ChartControl>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0"  Grid.Row="2">
+            <Button x:Name="Print" Width="150" Height="50" Margin="5,0,5,0" Click="Print_Click">Pivot</Button>
+            <Button x:Name="Chart" Width="150" Height="50" Margin="5,0,5,0" Click="Chart_Click">Chart</Button>
+            <Button x:Name="Pivot" Width="150" Height="50" Margin="5,0,5,0" Click="Pivot_Click">Print</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

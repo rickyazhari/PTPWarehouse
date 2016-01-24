@@ -24,7 +24,8 @@ namespace AppWarehouse.views
         public main()
         {
             InitializeComponent();
-            submenu.Children.Add(new menu());
+            App.MenuViewModel.SelectedItem = Constant.OLAP_SELECTED;
+            submenu.Children.Add(new menu(this));
             Con.Children.Clear();
             Con.Children.Add(new LuasArealProduksi());
         }

@@ -36,7 +36,7 @@ namespace AppWarehouse
         public const string TABEL_FACT_PENYIANGAN = "FactPenyiangan";
         public const string TABEL_FACT_PRODUKSI = "FactProduksi";
         public const string TABEL_FACT_SEMPROT_HAMA = "FactSemprotHama";
-        public const string TABEL_FACT_SEMPROT_PENYAKIT = "FacctSemprotPenyakit";
+        public const string TABEL_FACT_SEMPROT_PENYAKIT = "FactSemprotPenyakit";
         public const string TABEL_FACT_SERANGAN_HAMA = "FactSeranganHama";
         public const string TABEL_FACT_SERANGAN_PENYAKIT = "FactSeranganPenyakit";
         public const string TABEL_FACT_TARGET_PRODUKSI = "FactTargetProduksi";
